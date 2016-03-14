@@ -1,4 +1,4 @@
-# Zeiterfassungs Server
+# Zeiterfassungs APP
 
 HS-Mainz Praxis Projekt
 

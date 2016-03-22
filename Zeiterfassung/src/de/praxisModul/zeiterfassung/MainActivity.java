@@ -1,13 +1,24 @@
 package de.praxisModul.zeiterfassung;
 
 import android.support.v7.app.ActionBarActivity;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity {
-
+public class MainActivity extends ActionBarActivity implements OnClickListener, LocationListener {
+	
+	private Button myButton;
+	private Button myButton2;
+	TextView mDataTxt;
+    private LocationManager mLocationManager;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -15,6 +26,11 @@ public class MainActivity extends ActionBarActivity {
 		TextView tv = new TextView(this);
 		tv.setText("Hello Android");
 		setContentView(tv);
+		//Intent intent = new 
+		myButton = (Button) findViewById(R.id.btn_start);
+		myButton.setOnClickListener(this);
+		myButton2 = (Button) findViewById(R.id.btn_start2);
+		myButton2.setOnClickListener(this);
 	}
 
 	@Override
@@ -34,5 +50,42 @@ public class MainActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		if (v == myButton) {
+			
+		}
+		else if (v == myButton2) {
+			
+		}
+	}
+
+	@Override
+	public void onLocationChanged(Location location) {
+		// TODO Auto-generated method stub
+		 StringBuilder dataStrBuilder = new StringBuilder();
+	     dataStrBuilder.append(String.format("Latitude: %.3f,   Longitude%.3fn", location.getLatitude(), location.getLongitude()));
+	     mDataTxt.setText(dataStrBuilder.toString());
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onProviderEnabled(String provider) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onProviderDisabled(String provider) {
+		// TODO Auto-generated method stub
+		
 	}
 }

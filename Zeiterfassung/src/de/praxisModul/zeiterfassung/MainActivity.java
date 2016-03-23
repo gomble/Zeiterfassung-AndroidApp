@@ -22,15 +22,13 @@ public class MainActivity extends ActionBarActivity implements OnClickListener, 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		TextView tv = new TextView(this);
-		tv.setText("Hello Android");
-		setContentView(tv);
+		//setContentView(R.layout.activity_main);
 		//Intent intent = new 
 		myButton = (Button) findViewById(R.id.btn_start);
 		myButton.setOnClickListener(this);
-		myButton2 = (Button) findViewById(R.id.btn_start2);
+		myButton2 = (Button) findViewById(R.id.btn_stop);
 		myButton2.setOnClickListener(this);
+		setContentView(R.layout.activity_main);
 	}
 
 	@Override
@@ -56,10 +54,16 @@ public class MainActivity extends ActionBarActivity implements OnClickListener, 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		if (v == myButton) {
-			
+			setContentView(R.layout.activity_main);
+			TextView tv = new TextView(this);
+			tv.setText("Hello again");
+			setContentView(tv);
 		}
 		else if (v == myButton2) {
-			
+			setContentView(R.layout.activity_main);
+			TextView tv = new TextView(this);
+			tv.setText("Hello again2");
+			setContentView(tv);
 		}
 	}
 

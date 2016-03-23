@@ -1,6 +1,7 @@
 package de.praxisModul.zeiterfassung;
 
 import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -12,23 +13,24 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity implements OnClickListener, LocationListener {
+public class MainActivity extends Activity implements OnClickListener, LocationListener {
 	
 	private Button myButton;
 	private Button myButton2;
 	TextView mDataTxt;
-    private LocationManager mLocationManager;
+    //private LocationManager mLocationManager;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.activity_main);
 		//Intent intent = new 
+		setContentView(R.layout.activity_main);
 		myButton = (Button) findViewById(R.id.btn_start);
 		myButton.setOnClickListener(this);
 		myButton2 = (Button) findViewById(R.id.btn_stop);
 		myButton2.setOnClickListener(this);
-		setContentView(R.layout.activity_main);
+	
 	}
 
 	@Override

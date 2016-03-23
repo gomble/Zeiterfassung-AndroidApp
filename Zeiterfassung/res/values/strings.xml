@@ -8,4 +8,5 @@
     <string name="title_activity_main">MainActivity</string>
 	<string name="start_gps">Start GPS Tracking:</string>
 	<string name="stop_gps">Stop GPS Tracking</string>
+	<string name="info">GPS based Time-Tracking</string>
 </resources>

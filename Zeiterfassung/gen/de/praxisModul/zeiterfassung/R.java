@@ -2882,8 +2882,8 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f07002f;
         public static final int accept=0x7f070002;
         public static final int action_settings=0x7f070041;
-        public static final int action_sign_in=0x7f070049;
-        public static final int action_sign_in_short=0x7f07004a;
+        public static final int action_sign_in=0x7f07004a;
+        public static final int action_sign_in_short=0x7f07004b;
         public static final int app_name=0x7f07003f;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
@@ -3003,23 +3003,24 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f070005;
         public static final int create_calendar_title=0x7f070004;
         public static final int decline=0x7f070003;
-        public static final int error_field_required=0x7f070050;
-        public static final int error_incorrect_password=0x7f07004f;
-        public static final int error_invalid_email=0x7f07004d;
-        public static final int error_invalid_password=0x7f07004e;
+        public static final int error_field_required=0x7f070051;
+        public static final int error_incorrect_password=0x7f070050;
+        public static final int error_invalid_email=0x7f07004e;
+        public static final int error_invalid_password=0x7f07004f;
         public static final int hello_world=0x7f070040;
+        public static final int info=0x7f070046;
         /**  Description of the button that clears the search input when searching for places. 
          */
         public static final int place_autocomplete_clear_button=0x7f070029;
         /**  Search box hint text for Place Autocomplete. [CHAR LIMIT=15] 
          */
         public static final int place_autocomplete_search_hint=0x7f070028;
-        public static final int plus_disconnect=0x7f07004c;
-        public static final int plus_sign_out=0x7f07004b;
+        public static final int plus_disconnect=0x7f07004d;
+        public static final int plus_sign_out=0x7f07004c;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f070047;
-        public static final int prompt_password=0x7f070048;
+        public static final int prompt_email=0x7f070048;
+        public static final int prompt_password=0x7f070049;
         public static final int start_gps=0x7f070044;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
@@ -3032,7 +3033,7 @@ containing a value of this type.
         public static final int store_picture_message=0x7f070001;
         public static final int store_picture_title=0x7f070000;
         public static final int title_activity_gps_tracker=0x7f070042;
-        public static final int title_activity_login=0x7f070046;
+        public static final int title_activity_login=0x7f070047;
         public static final int title_activity_main=0x7f070043;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 

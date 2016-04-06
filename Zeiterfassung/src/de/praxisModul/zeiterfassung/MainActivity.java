@@ -1,7 +1,11 @@
 package de.praxisModul.zeiterfassung;
 
 import android.support.v7.app.ActionBarActivity;
+
+//import com.google.android.googleplayservices.AndroidLocationServices;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -30,7 +34,8 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 		myButton.setOnClickListener(this);
 		myButton2 = (Button) findViewById(R.id.btn_stop);
 		myButton2.setOnClickListener(this);
-	
+		startService(new Intent(this, AndroidLocationService.class));
+
 	}
 
 	@Override

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Programme\\AndroidStudioProjects\\GPS-Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_notif.png",
+        "source": "E:\\Programme\\AndroidStudioProjects\\GPS-Tracker\\app\\src\\main\\res\\drawable-hdpi\\ic_notif.png"
+    },
+    {
+        "merged": "E:\\Programme\\AndroidStudioProjects\\GPS-Tracker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\Programme\\AndroidStudioProjects\\GPS-Tracker\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]
